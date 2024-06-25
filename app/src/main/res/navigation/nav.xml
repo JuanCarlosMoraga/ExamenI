@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav"
+    app:startDestination="@id/menu">
+
+    <fragment
+        android:id="@+id/menu"
+        android:name="com.moraga.exameni.Menu"
+        android:label="fragment_menu"
+        tools:layout="@layout/fragment_menu" >
+        <action
+            android:id="@+id/action_menu_to_cuadradoNum"
+            app:destination="@id/cuadradoNum" />
+        <action
+            android:id="@+id/action_menu_to_raizNum"
+            app:destination="@id/raizNum" />
+        <action
+            android:id="@+id/action_menu_to_antecesorNum2"
+            app:destination="@id/antecesorNum" />
+        <action
+            android:id="@+id/action_menu_to_sucesorNum"
+            app:destination="@id/sucesorNum" />
+    </fragment>
+    <fragment
+        android:id="@+id/cuadradoNum"
+        android:name="com.moraga.exameni.CuadradoNum"
+        android:label="fragment_cuadrado_num"
+        tools:layout="@layout/fragment_cuadrado_num" />
+    <fragment
+        android:id="@+id/raizNum"
+        android:name="com.moraga.exameni.RaizNum"
+        android:label="fragment_raiz_num"
+        tools:layout="@layout/fragment_raiz_num" />
+    <fragment
+        android:id="@+id/antecesorNum"
+        android:name="com.moraga.exameni.AntecesorNum"
+        android:label="fragment_antecesor_num"
+        tools:layout="@layout/fragment_antecesor_num" />
+    <fragment
+        android:id="@+id/sucesorNum"
+        android:name="com.moraga.exameni.SucesorNum"
+        android:label="fragment_sucesor_num"
+        tools:layout="@layout/fragment_sucesor_num" />
+</navigation>
